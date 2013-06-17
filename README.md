@@ -6,11 +6,13 @@ A minimalistic key stretching algorithm with high cpu-time and memory requiremen
 The algorithm in pseudo-code
 ----------------------------
 
+```
 initialize hasher with the key to be stretched
 for each iteration:
   append the digest of hasher to end of a list
   calculate a random position within the list based on the last digest
   update the hasher with data from this random position
+```
 
 Comments
 --------
